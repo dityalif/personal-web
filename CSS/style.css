@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+/*Full*/
+body{
+    margin: 0px;
+    background-color: #252525;
+}
+.content{
+    margin: 10px 50px
+}
+html{
+    font-family: 'Rubik', sans serif;
+}
+
+/*Nav*/
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 400;
+    background-color: #414141;
+    padding: 15px 0px;
+}
+.name{
+    letter-spacing: 3px;
+    font-weight: 500;
+    margin-left: 10vh;
+    
+}
+.nav .link {
+    display: flex;
+    justify-content: space-around;
+    width: 29%;
+    letter-spacing: 1px;
+    margin-right: 10vh;
+}
+
+.nav .link li{
+    list-style: none;
+}
+.burger div{
+    width: 23px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+}
+.burger{
+    display: none;
+}
+li {
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.5s;
+}
+li a{
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+li:hover{
+    border-bottom: 2px solid #fa3636;
+}
+li a:hover{
+    color: #fa3636
+}
+
+/*Home*/
+.content h1{
+    text-align: left;
+    color: white;
+    font-weight: 500;
+    padding: 30px;
+    padding-bottom: 50px;
+    font-size: 50px;
+}
+.content .main .poin{
+    max-width: 600px;
+    position: relative;
+    text-align: center;
+    color: white;
+    margin: 10px;
+}
+.content .main{
+    display: flex;
+    margin-left: 20px;
+}
+.content .main .poin .txt{
+    font-size: calc(30px);
+    max-width: 60%;
+    color: transparent;
+    font-weight: 400;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.content .main .poin:hover .txt{
+    color: white;
+    transition-duration: 0.1s;
+}
+.content .main .poin:hover img{
+    filter: brightness(50%);
+    transition-duration: 0.1s;
+}
+
+/*Projects*/
+p{
+    color: white;        
+}
+
+/*About*/
+.content .desc img{
+    height: 400px;
+    margin-right: 40px;
+}
+.content .desc{
+    font-size: 23px;
+    color: white;
+    left: 75px;
+    padding: 0px;
+    display: inline;
+    margin-left: 3vh;
+}
+.content .desc .txt{
+    width: 600px;
+    display: inline-block;
+    margin: 0px;
+}
+.about .content .desc .txt p{
+    margin: 0px;
+    margin-bottom: 25px;
+}
+
+/*Find Me*/
+.soc .poin{
+    text-align: left;
+    font-size: 22px;
+    padding: 15px 28px;
+}
+.content .soc .poin a{
+    color: white;
+    margin-left: 10px;
+}
+.soc .poin img{
+    width: 80px;
+}
+.content .soc .poin a:hover{
+    color: #fa3636;
+}
+
+@media only screen and (max-width: 1024px){
+    .nav .link{
+        width: 50%;
+    }
+    .content .main .poin .txt{
+        font-size: 25px;
+    }
+    .about .content .desc .txt{
+        margin-left: 0px;
+        margin-top: 3vh;
+        width: 550px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .full .content .main{
+        display: block;
+        margin: 0 auto;
+    }
+    .full{
+        overflow-x: hidden;
+        position: relative;
+    }
+    .about{
+        overflow-x: hidden;
+        position: relative;
+    }
+    .proj{
+        overflow-x: hidden;
+        position: relative;
+    }
+    .find{
+        overflow-x: hidden;
+        position: sticky;
+    }
+    .nav{
+        padding: 20px 0px;
+    }
+    .nav .link{
+        font-size: 30px;
+        position: absolute;
+        right: 0px;
+        height: 95vh;
+        width: 36%;
+        top: 3vh;
+        margin-right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translate(100%);
+        transition: transform 0.2s ease-in;
+        z-index: 10;
+        background-color: #414141;
+    }
+    .nav.link li{
+        opacity: 0;
+    }
+    .link li:active{
+        border-bottom: 2px solid transparent;
+    }
+    .nav .name{
+        margin-left: 6vh;
+    }
+    .burger{
+        display: inline-block;
+        margin-right: 6vh;
+    }
+    .burger:active div{
+        background-color: #fa3636;
+    }
+    .link.nav-active{
+        transform: translate(0%);
+    }
+    .about .content .desc .txt{
+        margin-left: 0px;
+        margin-top: 3vh;
+        width: 550px;
+    }
+    .content h1{
+        padding: 25px 10px;
+    }
+    .content .main .poin .txt{
+        font-size: 30px;
+    }
+    .about .content{
+        margin-left: 6vh;
+    }
+    .about .content .desc {
+        width: 551px;
+        margin-left: 0px;
+    }
+    .desc img{
+        margin-left: opx;
+    }
+    .content .soc {
+        max-height: 100%;
+    }
+    .proj{
+        height: 1024px;
+    }
+    .about{
+        height: 1024px;
+    }
+    .find{
+        height: 1024px;
+    }
+
+}
+@media only screen and (max-width: 500px){
+    .nav .name{
+        font-size: 18px;
+    }
+    .content h1{
+        font-size: 30px;
+    }
+    .nav .link{
+        font-size: 20px;
+        top: 7vh;
+        height: 91vh;
+    }
+    .content .main .poin .txt{
+        font-size: 17px;
+    }
+    .about .content .desc .txt{
+        width: 410px;
+        font-size: 19px;
+    }
+    .about .content .desc img{
+        height: 300px;
+    }
+    .content .soc .poin{
+        padding: 15px 0px;
+        font-size: 18px;
+    }
+    .content .soc .poin img{
+        width: 50px;
+    }
+}
