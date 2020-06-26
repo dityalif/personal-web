@@ -193,6 +193,7 @@ p{
         position: absolute;
         right: 0px;
         height: 95vh;
+        max-height: 100%;
         width: 36%;
         top: 3vh;
         margin-right: 0;
@@ -264,10 +265,9 @@ p{
     .content h1{
         font-size: 30px;
     }
-    .nav .link{
+    body .nav .link{
         font-size: 20px;
-        top: 7vh;
-        height: 91vh;
+        top: 4,5vh;
     }
     .content .main .poin .txt{
         font-size: 17px;
