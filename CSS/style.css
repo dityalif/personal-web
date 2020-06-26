@@ -113,7 +113,6 @@ p{
 
 /*About*/
 .content .desc img{
-    height: 400px;
     margin-right: 40px;
 }
 .content .desc{
@@ -242,8 +241,8 @@ p{
         width: 551px;
         margin-left: 0px;
     }
-    .desc img{
-        margin-left: opx;
+    .about .content .desc img{
+        margin-right: 0px;
     }
     .content .soc {
         max-height: 100%;
@@ -257,7 +256,6 @@ p{
     .find{
         height: 1024px;
     }
-
 }
 @media only screen and (max-width: 500px){
     .nav .name{
@@ -277,9 +275,6 @@ p{
     .about .content .desc .txt{
         width: 410px;
         font-size: 19px;
-    }
-    .about .content .desc img{
-        height: 300px;
     }
     .content .soc .poin{
         padding: 15px 0px;
